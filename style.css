@@ -1,0 +1,147 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Young Serif", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  background: var(--stone-100);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+ol,
+ul {
+  padding: 0 0 0 20px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+p,
+li {
+  font-size: 1.365rem;
+  font-family: "Outfit", sans-serif;
+  color: var(--stone-600);
+}
+
+h2,
+span,
+ol li::marker {
+  color: var(--brown-800);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Outfit", sans-serif;
+  color: var(--rose-800);
+  margin: 0;
+}
+
+.main {
+  margin: 100px auto 100px auto;
+  line-height: 1.9;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  background: var(--white);
+  text-align: left;
+  word-spacing: 2px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto 10px auto;
+  border-radius: 20px;
+}
+
+.recipe-group:first-child {
+  background: var(--rose-50);
+  padding: 15px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.recipe-group:not(:first-child, :last-child) {
+  border-bottom: 1px solid var(--stone-600);
+}
+
+.spacing p:not(:last-child) {
+  border-bottom: 1px solid var(--stone-600);
+}
+
+.spacing p,
+span {
+  padding-bottom: 10px;
+}
+
+.spacing p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media (max-width: 460px) {
+  h1,
+  p,
+  .recipe-group {
+    padding: 20px;
+  }
+
+  .recipe-group:first-child {
+    max-width: 300px;
+    margin: 0 auto 0 auto;
+  }
+
+  .recipe-group p {
+    padding: 0 20px;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  .main {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+  }
+
+  html,
+  body {
+    background: var(--white);
+    margin: 0;
+  }
+}

@@ -144,4 +144,7 @@ span {
     background: var(--white);
     margin: 0;
   }
+  section {
+    padding: 20px;
+  }
 }

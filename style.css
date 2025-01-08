@@ -103,7 +103,7 @@ span {
   align-items: flex-end;
 }
 
-@media (max-width: 460px) {
+@media screen and (max-width: 460px) {
   h1,
   p,
   .recipe-group {
